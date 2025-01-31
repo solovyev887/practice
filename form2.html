@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Выбор услуги</title>  
+    <link rel="stylesheet" href="form2.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <h2>Выбор услуги</h2>  
+        <form id="serviceForm">  
+            <label for="serviceType">Тип услуги:</label>  
+            <select id="serviceType" required>  
+                <option value="">Выберите...</option>  
+                <option value="create">Создание продукта</option>  
+                <option value="audit">Аудит продукта</option>  
+                <option value="improvement">Доработка продукта</option>  
+            </select>  
+
+            <label for="description">Описание:</label>  
+            <textarea id="description" required></textarea>  
+
+            <button type="submit">Отправить</button>  
+        </form>  
+
+        <div id="message" style="display:none;">  
+            <h3>Мы вам напишем или перезвоним!</h3>  
+        </div>  
+    </div>  
+
+    <script>  
+    document.getElementById('serviceForm').addEventListener('submit', function(event) {  
+            event.preventDefault(); // Отменяем стандартное поведение формы  
+
+            // Переход на главную страницу  
+            window.location.href = 'index.html';  
+
+            // Выводим сообщение  
+            setTimeout(function() {  
+                alert("Мы вам напишем или перезвоним!"); // Показ сообщения  
+            }, 5); // Задержка перед выводом сообщения  
+        });  
+    </script>  
+</body>  
+</html>  

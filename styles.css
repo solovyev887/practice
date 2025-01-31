@@ -1,0 +1,144 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0;  
+    height: 100vh; 
+
+}  
+
+.arrow {  
+    position: fixed; 
+    left: 20px;  
+    top: 50%; 
+    transform: translateY(-50%);
+    cursor: pointer;  
+    font-size: 90px;  
+    color: #4910e7;  
+    transition: transform 0.7s; 
+    z-index: 1001;
+}  
+
+.sidebar-menu {  
+    display: none; 
+    position: fixed; 
+    left: 0; 
+    top: 0;  
+    width: 250px; 
+    height: 100%; 
+    background: #1c171e;
+    color: white;  
+    padding: 20px;  
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);  
+    z-index: 1000; 
+}
+.sidebar-menu a {  
+    display: block;  
+    color: white;  
+    text-decoration: none;  
+    padding: 12px;  
+    transition: background-color 0.7s;  
+}  
+
+.sidebar-menu a:hover {  
+    background-color: #7504f7; 
+    border-radius: 10px; 
+}  
+
+.content {  
+    padding: 20px; /* Отступ для основного контента */  
+}  
+form {  
+    margin-top: 20px;  
+}  
+
+label {  
+    display: block;  
+    margin-top: 10px;  
+}  
+
+input, select, textarea {  
+    width: 100%;  
+    padding: 10px;  
+    margin-top: 5px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+
+button[type="submit"] {  
+    margin-top: 15px;  
+} 
+.project-discussion-text-style {  
+    display: inline-block; /* Чтобы обеспечить возможность применения перехода к размеру */  
+    padding: 10px 20px;   /* Отступы кнопки */  
+    background-color: #7504f7; /* Цвет кнопки */  
+    color: white;         /* Цвет текста */  
+    text-align: center;   /* Центрирование текста */  
+    border: none;         /* Убрать границы */  
+    border-radius: 4px;   /* Закругление углов */  
+    cursor: pointer;      /* Изменение курсора на указатель */;  
+    transition: transform 0.3s ease; /* Параметры перехода */  
+}  
+
+/* Эффект при наведении */  
+.project-discussion-text-style:hover {  
+    transform: scale(1.1); /* Увеличение кнопки на 10% */  
+}  
+.product-audit-card1{
+    transition: 1s; /* Время эффекта */
+}
+.product-audit-card1:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.product-image-container{
+    transition: 1s; /* Время эффекта */
+}
+.product-image-container:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.product-image-container1{
+    transition: 1s; /* Время эффекта */
+}
+.product-image-container1:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.project-details-card{
+    transition: 1s; /* Время эффекта */
+}
+.project-details-card:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.stable-service-content{
+    transition: 1s; /* Время эффекта */
+}
+.stable-service-content:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.weekly-summary-container{
+    transition: 1s; /* Время эффекта */
+}
+.weekly-summary-container:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.supporting-solutions-text-block{
+    transition: 1s; /* Время эффекта */
+}
+.supporting-solutions-text-block:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.digital-partner-with-long-term-collaboration{
+    transition: 1s; /* Время эффекта */
+}
+.digital-partner-with-long-term-collaboration:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.testimonial-container{
+    transition: 1s; /* Время эффекта */
+}
+.testimonial-container:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}

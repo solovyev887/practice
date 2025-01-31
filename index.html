@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="shortcut icon" href="C:\Users\Фекалис\Desktop\practice\assets\image_ed3a21.png" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+
+    <div class="arrow" onmouseover="showMenu()" onmouseout="hideMenu()">  
+      &gt;  
+  </div>  
+  
+  <nav class="sidebar-menu" id="sidebar" onmouseleave="hideMenu()">  
+      <a href="#service-title-style">Услуги</a>  
+      <a href="#corporate-social-e-commerce-heading">Проекты</a>  
+      <a href="#storm-heading">О нас</a>  
+      <a href="#testimonial-quote-style">блог</a>  
+      <a href="#centered-content-container">Контакты</a>  
+      <a href="#" id="openFormButton">Связаться</a>  
+  </nav>  
+  <script>
+  document.getElementById('openFormButton').addEventListener('click', function() {  
+    window.location.href = 'form1.html';  
+});  
+</script>
+  <script src="script.js"></script>  
+    <style>
+      
+      body{
+        background-color: #1C171E;
+        font-family: "Roboto", "Arial", sans-serif;
+      }
+      .service-section-container {
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 130px;
+      }
+      .service-title-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin-left: 150px;
+        font: 400 54px "roboto";
+        color: white;
+      }
+      .product-card-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .product-audit-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 436px;
+        height: 550px;
+        padding: 24px;
+        background: #231c26;
+        border-radius: 8px;
+      }
+      .product-audit-card1 {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 188px;
+        max-width: initial;
+        height: 187px;
+      }
+      .expertise-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+      .stormy-text-style1 {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 28px/25px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .expert-text {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 14px/17px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .expertize-section {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 14px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .project-discussion-button-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        height: 44px;
+        padding: 20px 21px 19px;
+        background: white;
+        border-radius: 8px;
+      }
+      .project-discussion-text-style {
+        flex: 1 1 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px "roboto";
+        color: #1c171e;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 8px;
+        height: 8px;
+        color: #1c171e;
+      }
+      .product-image-container {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 144px;
+        max-width: initial;
+        height: 212px;
+      }
+      .stormy-text-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: stretch;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        font: 400 28px/25px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .product-image-container1 {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 191px;
+        max-width: initial;
+        height: 212px;
+        border: none;
+        object-fit: cover;
+      }
+      .business-goal-description {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: stretch;
+        height: 51px;
+        padding: 0;
+        margin: 0;
+        font: 400 14px/17px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1348px" data-ignore="used only for top most containter width" >
+      <p id="service-title-style"></p>
+      <p class="service-title-style">услуги</p>
+      <div class="service-section-container">
+        <div class="product-card-container">
+          <div class="product-audit-card">
+            <img src="assets/image_d6109b50.png" class="product-audit-card1"  />
+            <div class="expertise-section">
+              <p id="stormy-text-style1"></p>
+              <p class="stormy-text-style1">Аудит текущего продукта</p>
+              <p class="expert-text">Повысим экспертизу вашей команды, поможем в наборе штата сотрудников на проект, проведём рефакторинг и др.</p>
+              <p class="expertize-section">От 500 тыс. ₽</p>
+            </div>
+            <div class="project-discussion-button-container">
+              <a href="form1.html"><p class="project-discussion-text-style">обсудить проект</p></a>
+              <div class="svg-container">
+                <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icons" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Union" d="M2.71,0.344v1.85l2.33,1.082h-4.57v1.448h4.58l-2.34,1.085v1.844l5.52,-2.934v-1.435z" fill="currentColor" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-audit-card">
+            <img src="assets/image_7b7ebd4a.png" class="product-image-container" />
+            <div class="expertise-section">
+              <p class="stormy-text-style">Доработка продукта</p>
+              <p class="expert-text">Проанализируем текущее состояние проекта, предложим пути решения и доработаем его до нужного результата</p>
+              <p class="expertize-section">От 500 тыс. ₽</p>
+            </div>
+            <div class="project-discussion-button-container">
+              <a href="form1.html"><p class="project-discussion-text-style">обсудить проект</p></a>
+              <div class="svg-container">
+                <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icons_2" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Union_2" d="M2.706,0.344v1.85l2.337,1.082h-4.575v1.448h4.582l-2.344,1.085v1.844l5.525,-2.934v-1.435z" fill="currentColor" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-audit-card">
+            <img src="assets/image_4b85d682.png" class="product-image-container1" />
+            <div class="expertise-section">
+              <p class="stormy-text-style">Разработка с нуля под ключ</p>
+              <p class="business-goal-description">Cоздадим программный продукт, начиная с составления бизнес-целей и заканчивая его поддержкой.</p>
+              <p class="expertize-section">от 1 млн ₽</p>
+            </div>
+            <div class="project-discussion-button-container">
+              <a href="form1.html"><p class="project-discussion-text-style">обсудить проект</p></a>
+              <div class="svg-container">
+                <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icons_3" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Union_3" d="M2.706,0.344v1.85l2.337,1.082h-4.575v1.448h4.582l-2.344,1.085v1.844l5.525,-2.934v-1.435z" fill="currentColor" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .vertical-flex-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .corporate-storefront-cta {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 1920px;
+        height: 436px;
+        padding-left: 77px;
+        overflow: hidden;
+        background: linear-gradient(120.37deg, rgba(0, 81, 255, 1) 0%, rgba(60, 138, 255, 1) 100.78%);
+        border-radius: 8px;
+      }
+      .ecommerce-card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: stretch;
+        justify-content: space-between;
+        min-width: 1419px;
+        height: 436px;
+      }
+      .ecommerce-card1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 434px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+      .embedded-store-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+      .feature-box {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 48px;
+        align-items: flex-end;
+        align-self: stretch;
+        justify-content: flex-start;
+        min-width: 434px;
+      }
+      .image-container4 {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 115px;
+        max-width: initial;
+        height: 23px;
+        overflow: hidden;
+      }
+      .corporate-social-e-commerce-heading {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 28px/28px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .ecommerce-button-style {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 67px;
+        min-width: 67px;
+        height: 31px;
+        font: 400 16px "roboto";
+        color: #9f8ca6;
+        text-transform: lowercase;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+      }
+      .project-details-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 207px;
+        height: 44px;
+        padding: 20px 21px 19px;
+        background: white;
+        border-radius: 8px;
+      }
+      .project-details-text-style {
+        flex: 1 1 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 14px "roboto";
+        color: #1c171e;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 8px;
+        height: 8px;
+        color: #1c171e;
+      }
+      .corporate-social-ecommerce-layout {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 874px;
+      }
+      .hierarchical-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .hero-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 460px;
+        max-width: initial;
+        height: 433px;
+        border: none;
+        object-fit: cover;
+      }
+      .vertical-centered-container {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        align-self: center;
+        justify-content: center;
+        margin-left: 51px;
+      }
+      .image-container6 {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 144px;
+        max-width: initial;
+        height: 91px;
+      }
+      .vertical-spacing-container {
+        flex: 0 0 auto;
+        margin-top: 26px;
+      }
+      .image-container-styles {
+        box-sizing: border-box;
+        display: block;
+        width: 360px;
+        max-width: initial;
+        height: 223px;
+        border: 17.5px solid white;
+        border-radius: 22px;
+        object-fit: cover;
+      }
+      .vertical-aligned-image-container {
+        flex: 0 0 auto;
+        align-self: center;
+        margin-top: -137px;
+        margin-left: 63px;
+      }
+      .image-container-styles2 {
+        box-sizing: border-box;
+        display: block;
+        width: 406px;
+        max-width: initial;
+        height: 141px;
+        border: 17.5px solid white;
+        border-radius: 22px;
+        object-fit: cover;
+      }
+      .finance-platform-hero-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 1920px;
+        height: 436px;
+        padding-right: 289px;
+        padding-left: 289px;
+        overflow: hidden;
+        background: linear-gradient(239.98deg, rgba(11, 226, 237, 1) 0%, rgba(67, 28, 129, 1) 100%);
+        border-radius: 8px;
+      }
+      .education-platform-banner {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 255px;
+        max-width: initial;
+        height: 83px;
+      }
+      .finance-button-style {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 152px;
+        min-width: 152px;
+        height: 31px;
+        font: 400 16px "roboto";
+        color: #9f8ca6;
+        text-transform: lowercase;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+      }
+      .finance-project-details-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 763px;
+        padding-bottom: 2.25px;
+      }
+      .hierarchical-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: center;
+        justify-content: flex-start;
+        margin-left: -116px;
+      }
+      .image-container3 {
+        flex: 0 0 auto;
+        padding-bottom: 4.75px;
+      }
+      .blue-box-shadow-container {
+        box-sizing: border-box;
+        width: 165px;
+        box-shadow: 0px 2px 2px #39628f;
+      }
+      .image-container-with-shadow2 {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: initial;
+        height: 98px;
+        border: none;
+        box-shadow: 0px 3.25px 3.25px rgba(31, 53, 132, 0.6);
+        object-fit: cover;
+      }
+      .blue-box-container {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 165px;
+        margin-left: 20.5px;
+        box-shadow: 0px 2px 2px #39628f;
+      }
+      .image-container-with-shadow {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: initial;
+        height: 103px;
+        border: none;
+        box-shadow: 0px 3.25px 3.25px rgba(31, 53, 132, 0.6);
+        object-fit: cover;
+      }
+      .flex-column-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        align-self: flex-end;
+        justify-content: flex-start;
+        width: 389px;
+        margin-top: -103px;
+        box-shadow: 0px 2px 2px #39628f;
+      }
+      .image-container {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 178px;
+        border: none;
+        object-fit: cover;
+      }
+      .image-container1 {
+        flex: 0 0 auto;
+        margin-top: -164px;
+      }
+      .content-wrapper {
+        box-sizing: border-box;
+        width: 582px;
+        padding: 28.5px 68px 21px;
+        background: url("assets/image_51a9ca9b.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .blend-mode-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: initial;
+        height: 370px;
+        mix-blend-mode: color-dodge;
+      }
+      .nested-image-container {
+        flex: 0 0 auto;
+        padding-right: 48px;
+        padding-left: 428px;
+        margin-top: -281px;
+      }
+      .blue-box-shadow-container1 {
+        box-sizing: border-box;
+        width: 241px;
+        box-shadow: 0px 2px 2px #39628f;
+      }
+      .image-container-with-shadow1 {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: initial;
+        height: 202px;
+        border: none;
+        box-shadow: 0px 3.25px 3.25px rgba(31, 53, 132, 0.6);
+        object-fit: cover;
+      }
+      .negative-margin-image-container {
+        flex: 0 0 auto;
+        margin-top: -70px;
+      }
+      .image-container2 {
+        box-sizing: border-box;
+        display: block;
+        width: 751px;
+        max-width: initial;
+        height: 85px;
+      }
+      .cargo-tracking-widget {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 1920px;
+        height: 436px;
+        padding-right: 7px;
+        padding-left: 7px;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .tracking-service-container {
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: -7px;
+        background: url("assets/image_bf39fdb6.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .logistic-tracking-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 79px;
+        background: radial-gradient(68.17% 129.22% at 68.17% 55.71%, rgba(28, 23, 30, 0) 0%, rgba(28, 23, 30, 0.71) 41.53%, rgba(28, 23, 30, 0.82) 54.79%, #1c171e 83.46%);
+      }
+      .logistics-tracking-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        min-width: 1270px;
+        padding-top: 86px;
+        padding-bottom: 127px;
+      }
+      .logistic-tracking-card {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 59.46%;
+        padding-top: 44px;
+        padding-bottom: 2.5px;
+      }
+      .cargo-tracking-service-widget {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .cargo-tracking-title-text-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 659px;
+        padding: 0;
+        margin: 0;
+        font: 400 28px/28px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .logistic-button {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 97px;
+        min-width: 97px;
+        height: 31px;
+        font: 400 16px "roboto";
+        color: #9f8ca6;
+        text-transform: lowercase;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+      }
+      .logistics-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 8px;
+        backdrop-filter: blur(50px);
+      }
+      .flex-row-with-icon {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 4px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-right: 10px;
+        padding-left: 5px;
+      }
+      .svg-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 22px;
+        height: 22px;
+        overflow: hidden;
+        color: #ffffff;
+      }
+      .stormy-text-bold {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px "roboto";
+        color: white;
+      }
+      .logistics-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 40.54%;
+      }
+      .image-container5 {
+        flex: 0 0 auto;
+        padding-right: 41px;
+        padding-left: 41px;
+      }
+      .image-container-styles1 {
+        box-sizing: border-box;
+        display: block;
+        width: 438px;
+        max-width: initial;
+        height: 204px;
+        border: none;
+        object-fit: cover;
+      }
+      .profile-card {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        height: 177px;
+        margin-top: -158px;
+        background: rgba(0, 36, 50, 0.52);
+        border-radius: 99px;
+        backdrop-filter: blur(40px);
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <div class="vertical-flex-container">
+        <div class="corporate-storefront-cta">
+          <div class="ecommerce-card">
+            <div class="ecommerce-card1">
+              <div class="embedded-store-section">
+                <div class="feature-box">
+                  <img src="assets/image_f9806913.png" class="image-container4" />
+                </div>
+                <p id="corporate-social-e-commerce-heading"></p>
+                <p class="corporate-social-e-commerce-heading">Встраиваемый интернет-магазин для платформы корпоративных соцсетей</p>
+              </div>
+              <div class="project-details-card">
+                <a href="https://www.daoffice.ru/ "><p class="project-details-text-style">подробнее о проекте</p></a>
+                <div class="svg-container">
+                  <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icons" xmlns="http://www.w3.org/2000/svg">
+                      <path id="Union" d="M2.706,0.344v1.85l2.337,1.082h-4.575v1.448h4.582l-2.344,1.085v1.844l5.525,-2.934v-1.435z" fill="currentColor" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="corporate-social-ecommerce-layout">
+              <div class="hierarchical-container1">
+                <img src="assets/image_b8b0e3f1.png" class="hero-image-container" />
+                <div class="vertical-centered-container">
+                  <img src="assets/image_e3415f64.png" class="image-container6" />
+                  <div class="vertical-spacing-container">
+                    <img src="assets/image_335e1b73.png" class="image-container-styles" />
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-aligned-image-container">
+                <img src="assets/image_9ca261ed.png" class="image-container-styles2" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="finance-platform-hero-section">
+          <div class="ecommerce-card1">
+            <div class="embedded-store-section">
+              <img src="assets/image_2dd28a3f.png" class="education-platform-banner" />
+              <p class="corporate-social-e-commerce-heading">Онлайн-платформа для образования</p>
+            </div>
+            <div class="project-details-card">
+              <a href="https://portal.zapartoy.com"><p class="project-details-text-style">подробнее о проекте</p></a>
+              <div class="svg-container">
+                <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icons_2" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Union_2" d="M2.706,0.344v1.85l2.337,1.082h-4.575v1.448h4.582l-2.344,1.085v1.844l5.525,-2.934v-1.435z" fill="currentColor" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="finance-project-details-container">
+            <div class="hierarchical-container">
+              <div class="image-container3">
+                <div class="blue-box-shadow-container">
+                  <img src="assets/image_8854ab3e.png" class="image-container-with-shadow2" />
+                </div>
+              </div>
+              <div class="blue-box-container">
+                <img src="assets/image_b52cc861.png" class="image-container-with-shadow" />
+              </div>
+            </div>
+            <div class="flex-column-container">
+              <img src="assets/image_c96a89a8.png" class="image-container" />
+            </div>
+            <div class="image-container1">
+              <div class="content-wrapper">
+                <img src="assets/image_4ccf6647.png" class="blend-mode-image-container" />
+              </div>
+            </div>
+            <div class="nested-image-container">
+              <div class="blue-box-shadow-container1">
+                <img src="assets/image_3ff42336.png" class="image-container-with-shadow1" />
+              </div>
+            </div>
+            <div class="negative-margin-image-container">
+              <img src="assets/image_76bfb12.png" class="image-container2" />
+            </div>
+          </div>
+        </div>
+        <div class="cargo-tracking-widget">
+          <div class="tracking-service-container">
+            <div class="logistic-tracking-section">
+              <div class="logistics-tracking-section">
+                <div class="logistic-tracking-card">
+                  <div class="cargo-tracking-service-widget">
+                    <p class="cargo-tracking-title-text-style">Отслеживание грузов<br />по специальным датчикам в web-сервисе</p>
+                    <div class="logistics-card">
+                      <div class="flex-row-with-icon">
+                        <div class="svg-container1">
+                          <svg viewBox="0 0 22 22" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Lock" xmlns="http://www.w3.org/2000/svg">
+                              <path id="Vector_9" d="M11,11.92c-0.279,-0.01 -0.552,0.08 -0.783,0.23c-0.231,0.16 -0.408,0.38 -0.508,0.64c-0.1,0.27 -0.118,0.55 -0.051,0.82c0.067,0.27 0.216,0.52 0.426,0.7v1.27c0,0.25 0.096,0.48 0.268,0.65c0.172,0.17 0.405,0.27 0.648,0.27c0.243,0 0.477,-0.1 0.649,-0.27c0.171,-0.17 0.268,-0.4 0.268,-0.65v-1.27c0.21,-0.18 0.358,-0.43 0.425,-0.7c0.067,-0.27 0.05,-0.55 -0.05,-0.82c-0.1,-0.26 -0.277,-0.48 -0.508,-0.64c-0.231,-0.15 -0.505,-0.24 -0.784,-0.23zM15.584,8.25v-1.83c0,-1.22 -0.483,-2.38 -1.343,-3.24c-0.859,-0.86 -2.025,-1.35 -3.241,-1.35c-1.215,0 -2.381,0.49 -3.241,1.35c-0.859,0.86 -1.342,2.02 -1.342,3.24v1.83c-0.729,0 -1.429,0.29 -1.945,0.81c-0.515,0.51 -0.805,1.21 -0.805,1.94v6.42c0,0.73 0.29,1.43 0.805,1.94c0.516,0.52 1.216,0.81 1.945,0.81h9.167c0.729,0 1.428,-0.29 1.944,-0.81c0.516,-0.51 0.806,-1.21 0.806,-1.94v-6.42c0,-0.73 -0.29,-1.43 -0.806,-1.94c-0.516,-0.52 -1.215,-0.81 -1.944,-0.81zM8.25,6.42c0,-0.73 0.29,-1.43 0.806,-1.95c0.516,-0.51 1.215,-0.8 1.944,-0.8c0.73,0 1.429,0.29 1.945,0.8c0.516,0.52 0.805,1.22 0.805,1.95v1.83h-5.5zM16.5,17.42c0,0.24 -0.096,0.47 -0.268,0.65c-0.172,0.17 -0.405,0.26 -0.648,0.26h-9.167c-0.243,0 -0.476,-0.09 -0.648,-0.26c-0.172,-0.18 -0.269,-0.41 -0.269,-0.65v-6.42c0,-0.24 0.097,-0.48 0.269,-0.65c0.172,-0.17 0.405,-0.27 0.648,-0.27h9.167c0.243,0 0.476,0.1 0.648,0.27c0.172,0.17 0.268,0.41 0.268,0.65z" fill="currentColor" />
+                            </g>
+                          </svg>
+                        </div>
+                        <p class="stormy-text-bold">NDA</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="logistics-section">
+                  <div class="image-container5">
+                    <img src="https://s3-alpha-sig.figma.com/img/0d47/21e8/d6e4de4d8a66cb121f087e803262df9d?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ruhaRKXdYzr~LZnkVW58WtHT~ZRfufBMp2LcXHyBeKjhpob4PYvE9hJXTuhsoCA6uWwMLlGmi2abq6z~v89Qpo97dL-oruA5j7BMcx7RfkkFS8PbZiDV8w3~Ex6Eb77CqgRemXJxtjdVi7rqAQe3dbwMrtvZjnDbUebsLgqRlrOQb6vrffjNOJ1pA4nhJNb~JpqgCyL4UdyznwV~1ELuGXYjjSK2Bbp8cGDAlPu5A7~PtFJm-S6lRSGELL-Q9RtkZnK2TXqYkuB8SlsSz6D8PJSZgPtZDOqBIL~TWKSOx4E27DXdTig8gn2-jyhBu2zjeGI53JE6I5cvykH7I9mVvw__" class="image-container-styles1" />
+                  </div>
+                  <div class="profile-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      .mobile-app-cases-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 1348px;
+        height: 73px;
+        padding: 20px 32px 19px 21px;
+        background: white;
+        border-radius: 8px;
+        margin:150px;
+      }
+      .mobile-app-case-description {
+        flex: 1 1 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px "roboto";
+        color: #1c171e;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 8px;
+        height: 8px;
+        color: #1c171e;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1348px" data-ignore="used only for top most containter width">
+      <div class="mobile-app-cases-container">
+        <p class="mobile-app-case-description">больше кейсов мобильных приложений</p>
+        <div class="svg-container">
+          <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="icons" xmlns="http://www.w3.org/2000/svg">
+              <path id="Union" d="M2.71,0.344v1.8495l2.33,1.0823h-4.57v1.4485h4.58l-2.34,1.0852v1.8436l5.52,-2.9343v-1.4346z" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <style>
+      .feature-highlight-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 1348px;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        margin-left: 150px;
+      }
+      .storm-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin-left: 150px;
+        font: 400 54px "roboto";
+        color: white;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .feature-cards-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 134px;
+        align-items: flex-start;
+        justify-content: center;
+        height: 322px;
+      }
+      .stable-services-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+        width: 322px;
+      }
+      .stable-service-content {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 144px;
+        max-width: initial;
+        height: 145px;
+      }
+      .stable-environment-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+      .stable-environment-text-style1 {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 28px/25px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .stable-environment-text-style {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 14px/17px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .weekly-summary-container {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 108px;
+        max-width: initial;
+        height: 134px;
+      }
+      .supporting-solutions-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: flex-end;
+        width: 322px;
+      }
+      .supporting-solutions-text-block {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 181px;
+        max-width: initial;
+        height: 148px;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1348px" data-ignore="used only for top most containter width">
+      <p id="storm-heading"></p>
+      <p class="storm-heading">преимущества</p>
+      <div class="feature-highlight-section">
+        <div class="feature-cards-container">
+          <div class="stable-services-section">
+            <img src="assets/image_3c0286a6.png" class="stable-service-content" />
+            <div class="stable-environment-section">
+              <p class="stable-environment-text-style1">Используем устойчивые сервисы в окружении</p>
+              <p class="stable-environment-text-style">Мы предлагаем стабильное окружение для продукта</p>
+            </div>
+          </div>
+          <div class="stable-services-section">
+            <img src="assets/image_5b37e530.png" class="weekly-summary-container" />
+            <div class="stable-environment-section">
+              <p class="stable-environment-text-style1">Демонстрируем итоги работы каждую неделю</p>
+              <p class="stable-environment-text-style">А также предоставляем прозрачный процесс разработки для клиента. Для нас важна открытость в общении</p>
+            </div>
+          </div>
+          <div class="supporting-solutions-container">
+            <img src="assets/image_d6809518.png" class="supporting-solutions-text-block" />
+            <div class="stable-environment-section">
+              <p class="stable-environment-text-style1">Используем поддерживающие решения</p>
+              <p class="stable-environment-text-style">Любая кодовая база, разработанная нами будет легко взаимозаменяема другими участниками процесса</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .digital-partner-long-term-engagement {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 200px 289px 120px;
+        overflow: hidden;
+        background: #1c171e;
+      }
+      .digital-partner-with-long-term-collaboration {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 1207px;
+        padding: 0;
+        margin: 0;
+        font: 400 128px/115px "roboto";
+        color: white;
+        text-align: center;
+      }
+      .partner-info-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 1342px;
+      }
+      .stats-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .experience-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 2px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .stormy-text-bold {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 54px "roboto";
+        color: white;
+      }
+      .experience-years-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 14px "roboto";
+        color: white;
+        text-transform: lowercase;
+      }
+      .expert-description-text-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 436px;
+        padding: 0;
+        margin: 0;
+        font: 400 14px/17px "roboto";
+        color: white;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .about-section-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        width: 322px;
+        padding: 20px 21px 19px;
+        background: white;
+        border-radius: 8px;
+      }
+      .about-us-text-style {
+        flex: 1 1 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px "roboto";
+        color: #1c171e;
+        text-align: left;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 8px;
+        height: 8px;
+        color: #1c171e;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <div class="digital-partner-long-term-engagement">
+        <p id="digital-partner-with-long-term-collaboration"></p>
+        <p class="digital-partner-with-long-term-collaboration">диджитал партнёр<br />с долгим циклом сотрудничества</p>
+        <div class="partner-info-section">
+          <div class="stats-container">
+            <div class="experience-info-container">
+              <p class="stormy-text-bold">3</p>
+              <p class="experience-years-text-style">Года опыта</p>
+            </div>
+            <div class="experience-info-container">
+              <p class="stormy-text-bold">20</p>
+              <p class="experience-years-text-style">сотрудников</p>
+            </div>
+            <div class="experience-info-container">
+              <p class="stormy-text-bold">30+</p>
+              <p class="experience-years-text-style">Проектов</p>
+            </div>
+          </div>
+          <p class="expert-description-text-style">Мы участвуем в отраслевых конференциях и митапах, постоянно улучшаем свою экспертизу и работаем над оптимизацией внутренних процессов.</p>
+          <div class="about-section-container">
+            <p class="about-us-text-style">больше о нас</p>
+            <div class="svg-container">
+              <svg viewBox="0 0 8 8" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="icons" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Union" d="M2.71,0.344v1.85l2.33,1.082h-4.57v1.448h4.58l-2.34,1.085v1.844l5.52,-2.934v-1.435z" fill="currentColor" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .testimonial-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-top: 120px;
+        margin-left: 350px;
+      }
+      .testimonial-quote-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 1118px;
+        padding: 0;
+        margin: 0;
+        font: 400 54px/54px "roboto";
+        color: white;
+        text-align: left;
+      }
+      .flex-row-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+      }
+      .team-member-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .profile-image-styles {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        width: 80px;
+        max-width: initial;
+        height: 80px;
+        border: none;
+        border-radius: 6px;
+        mix-blend-mode: normal;
+        object-fit: cover;
+      }
+      .vertical-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 2px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .team-member-name-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 19px "roboto";
+        color: white;
+      }
+      .company-role-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 300 13px "roboto";
+        color: white;
+      }
+      .flex-row-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        color: #1c171e;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1118px" data-ignore="used only for top most containter width">
+      <div class="testimonial-container">
+        <p id="testimonial-quote-style"></p>
+        <p class="testimonial-quote-style">«Очень приятно было работать с ребятами! Отдельное спасибо команде флаттеристов с менеджером Олей — всегда на связи. Хочу отметить именно гибкость в работе: команда быстро реагировала на доработки в утверждённый функционал»</p>
+        <div class="flex-row-container1">
+          <div class="team-member-card">
+            <img src="assets/image_e49e7788.jpeg" class="profile-image-styles" />
+            <div class="vertical-card">
+              <p class="team-member-name-text-style">Вадим Рустамов</p>
+              <p class="company-role-text-style">CTO</p>
+              <p class="company-role-text-style">Heatbit</p>
+            </div>
+          </div>
+          <div class="flex-row-container">
+            <div class="svg-container">
+              <svg viewBox="0 0 31.9999 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="icons" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="31.9999" height="32" rx="16" transform="matrix(-1, 0, 0, 1, 31.999900000000025, 0)" fill="white" />
+                  <path id="Union" d="M18.4399,9.752v2.908l-3.68,1.701h7.2v2.278h-7.21l3.69,1.706v2.899l-8.69,-4.614v-2.255z" fill="currentColor" />
+                </g>
+              </svg>
+            </div>
+            <div class="svg-container">
+              <svg viewBox="0 0 31.9999 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="icons_2" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0" y="0" width="31.9999" height="32" rx="16" fill="white" />
+                  <path id="Union_2" d="M13.56,9.752v2.908l3.68,1.701h-7.2v2.278h7.21l-3.69,1.706v2.899l8.69,-4.614v-2.255z" fill="currentColor" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .centered-content-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 172px;
+        padding-bottom: 172px;
+        overflow: hidden;
+        background: #1c171e;
+      }
+      .action-card {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        align-self: stretch;
+        justify-content: center;
+        min-width: 1920px;
+        padding: 14px 14px 12px;
+      }
+      .big-white-text {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 128px "roboto";
+        color: white;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <p id="centered-content-container"></p>
+      <div class="centered-content-container">
+        <div class="action-card">
+          <p class="big-white-text">заполнить бриф</p>
+        </div>
+        <div class="action-card">
+          <p class="big-white-text">позвонить</p>
+        </div>
+        <div class="action-card">
+          <p class="big-white-text">telegram</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      .main-navigation-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 1920px;
+        background: #1c171e;
+      }
+      .main-content-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .header-section {
+        display: flex;
+        flex-direction: row;
+        gap: 505px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 108px;
+        padding-bottom: 113px;
+      }
+      .vertical-section-with-text-and-contact {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .flaton-system-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 14px ;
+        color: white;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 22px;
+        height: 18px;
+        color: #ffffff;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: block;
+        width: 90px;
+        max-width: initial;
+        height: 41px;
+        mix-blend-mode: normal;
+      }
+      .hero-section {
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 260px;
+      }
+    </style>
+    <style>
+      .main-navigation-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 1920px;
+        background: #1c171e;
+      }
+      .main-content-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .header-section {
+        display: flex;
+        flex-direction: row;
+        gap: 505px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 108px;
+        padding-bottom: 113px;
+      }
+      .vertical-section-with-text-and-contact {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .flaton-system-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 14px "roboto";
+        color: white;
+        text-transform: lowercase;
+      }
+      .svg-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        width: 22px;
+        height: 18px;
+        color: #ffffff;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: block;
+        width: 90px;
+        max-width: initial;
+        height: 41px;
+        mix-blend-mode: normal;
+      }
+      .hero-section {
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 260px;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <div class="main-navigation-container">
+        <div class="main-content-container">
+          <div class="header-section">
+            <div class="vertical-section-with-text-and-contact">
+              <p class="flaton-system-text-style">главная</p>
+              <p class="flaton-system-text-style">услуги</p>
+              <p class="flaton-system-text-style">проекты</p>
+              <p class="flaton-system-text-style">о нас</p>
+              <p class="flaton-system-text-style">блог</p>
+              <p class="flaton-system-text-style">аутстафф</p>
+              <p class="flaton-system-text-style">контакты</p>
+            </div>
+            <div class="vertical-section-with-text-and-contact">
+              <div class="svg-container">
+                <svg viewBox="0 0 21.7488 18.2416" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M8.52,12.039l8.06,5.954c0.92,0.508 1.584,0.245 1.813,-0.854l3.281,-15.46c0.336,-1.347 -0.514,-1.958 -1.394,-1.558l-19.265,7.428c-1.315,0.528 -1.307,1.261 -0.239,1.588l4.944,1.543l11.445,-7.221c0.54,-0.327 1.036,-0.151 0.629,0.21" fill="currentColor" xmlns="http://www.w3.org/2000/svg" /></svg>
+              </div>
+              <p class="flaton-system-text-style">+7 963 960-82-95</p>
+              <p class="flaton-system-text-style">director@flaton.systems</p>
+            </div>
+            <img src="assets/image_1fb4b6b3.png" class="contact-info-container" />
+          </div>
+        </div>
+        <img src="assets/image_eaccf0de.png" class="hero-section" />
+      </div>
+    </div>
+  </body>
+</html>
